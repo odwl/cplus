@@ -13,8 +13,9 @@ void Exo1() {
   Populate(vec2);
   Display(*vec2);
 
-  list<int> lst();
-  Dispaly(lst);
+  list<int> lst;
+  Copy(*vec, &lst);
+  Display(lst);
 }
 
 int main() {
