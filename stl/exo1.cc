@@ -10,10 +10,13 @@ void Exo1() {
   vector<int> vec = *Populate<vector<int> >();
   Display(vec);
 
-  list<int> lst(10);
+  list<int> lst(vec.size());
   Copy(vec, &lst);
-  cout << lst.size() << ' ' << vec.size() << endl;
   Display(lst);
+
+  list<int>* lst2 = new list<int>;
+  Copy(vec, lst2);
+  Display(*lst2);
 }
 
 int main() {

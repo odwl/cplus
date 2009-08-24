@@ -10,13 +10,6 @@ void Copy(const T1& cont1, T2* cont2) {
 }
 
 template <typename T>
-void Populate(T* cont) {
-  for (int i = 0; i < 10; ++i) {
-    cont->push_back(i);
-  }
-}
-
-template <typename T>
 T* Populate() {
   T* cont = new T;
   for (int i = 0; i < 10; ++i) {
