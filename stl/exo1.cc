@@ -7,14 +7,11 @@
 using namespace std;
 
 void Exo1() {
-  vector<int>* vec = Populate<vector<int> >();
-  Display(*vec);
-  vector<int>* vec2 = new vector<int>;
-  Populate(vec2);
-  Display(*vec2);
+  vector<int> vec = *Populate<vector<int> >();
+  Display(vec);
 
   list<int> lst;
-  Copy(*vec, &lst);
+  Copy(vec, &lst);
   Display(lst);
 }
 
