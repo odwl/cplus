@@ -7,10 +7,8 @@
 using namespace std;
 
 void Exo1() {
-  vector<int> vec = Populate<vector<int> >();
   vector<int> vec2;
   Populate(vec2);
-  Display(vec);
   Display(vec2);
   vector<int>* vec3 = Populate2<vector<int> >();
   Display(*vec3);
