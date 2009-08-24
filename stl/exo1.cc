@@ -17,6 +17,14 @@ void Exo1() {
   list<int>* lst2 = new list<int>;
   Copy(vec, lst2);
   Display(*lst2);
+
+  vector<int> vec2;
+  vec2.resize(vec.size());
+  Copy(vec, &vec2);
+  Display(vec2);
+
+  list<int> lst3(vec.begin(), vec.end());
+  Display(lst3);
 }
 
 int main() {
