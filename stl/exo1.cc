@@ -12,6 +12,9 @@ void Exo1() {
   vector<int>* vec2 = new vector<int>;
   Populate(vec2);
   Display(*vec2);
+
+  list<int> lst();
+  Dispaly(lst);
 }
 
 int main() {

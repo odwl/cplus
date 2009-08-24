@@ -16,7 +16,6 @@ void Populate(T* cont) {
   }
 }
 
-
 template <typename T>
 T* Populate() {
   T* cont = new T;
