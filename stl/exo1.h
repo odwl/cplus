@@ -19,6 +19,23 @@ T Populate() {
 }
 
 template <typename T>
+void Populate3(T* cont) {
+  for (int i = 0; i < 10; ++i) {
+    cont->push_back(i);
+  }
+}
+
+
+template <typename T>
+T* Populate2() {
+  T* cont = new T;
+  for (int i = 0; i < 10; ++i) {
+    cont->push_back(i);
+  }
+  return cont;
+}
+
+template <typename T>
 void Populate(T& cont) {
   for (int i = 0; i < 10; ++i) {
     cont.push_back(i);

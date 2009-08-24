@@ -12,6 +12,11 @@ void Exo1() {
   Populate(vec2);
   Display(vec);
   Display(vec2);
+  vector<int>* vec3 = Populate2<vector<int> >();
+  Display(*vec3);
+  vector<int>* vec4;
+  Populate3(vec4);
+  Display(*vec4);
 }
 
 int main() {
