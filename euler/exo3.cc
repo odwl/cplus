@@ -1,11 +1,4 @@
-
-#include <iostream>
-#include <vector>
-
-using namespace std;
-
-//int NUM = 13195;
-long NUM = 600851475143;
+#include <iostream>#include <vector> using namespace std; //int NUM = 13195; long NUM = 600851475143;
 //long NUM =  716151937;
 //long NUM = 6857;
 

@@ -6,7 +6,7 @@ using namespace std;
 bool IsPalindrome(int num) {
   char numstr[10];
   sprintf(numstr, "%d", num);
-  int len = string(numstr).size();
+  int len = strlen(numstr);
   bool isPalindrom = true;
   for (int i = 0; i < len; ++i) {
     if (numstr[i] != numstr[len - i -1]) {
