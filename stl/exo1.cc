@@ -15,6 +15,11 @@ void Exo1() {
   cout << "list is: ";
   Copy(vec, &lst);
   Display(lst);
+
+  vec[0] = 1000;
+  Exchange(&vec, &lst);
+  Display(vec);
+  Display(lst);
 }
 
 int main() {
