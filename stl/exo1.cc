@@ -25,6 +25,11 @@ void Exo1() {
   cout << "Test Extend" << endl;
   Extend(&vec, lst);
   Display(vec);
+
+  cout << "Test Remove" << endl;
+  Remove(&vec, 1000);
+  Display(vec);
+
 }
 
 int main() {

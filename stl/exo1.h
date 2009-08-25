@@ -19,6 +19,11 @@ void Extend(T1* cont1, const T2& cont2) {
   cont1->insert(cont1->end(), cont2.begin(), cont2.end());
 }
 
+template <typename T, typename S>
+void Remove(T* cont, const S& val){
+  remove(cont->begin(), cont->end(), val);
+}
+
 
 template <typename T>
 T* Populate() {
