@@ -11,9 +11,7 @@ void Copy(const T1& cont1, T2* cont2) {
 
 template <typename T1, typename T2>
 void Exchange(T1* cont1, T2* cont2) {
-  T2 cont3 = T2(cont1->begin(), cont1->end());
-  *cont1 = T1(cont2->begin(), cont2->end());
-  *cont2 = cont3;
+  swap_ranges(cont1->begin(), cont1->end(), cont2->begin());
 }
 
 template <typename T>
