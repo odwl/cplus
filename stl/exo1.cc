@@ -8,23 +8,13 @@ using namespace std;
 
 void Exo1() {
   vector<int> vec = *Populate<vector<int> >();
+  cout << "vector is: "; 
   Display(vec);
 
-  list<int> lst(vec.size());
+  list<int> lst;
+  cout << "list is: ";
   Copy(vec, &lst);
   Display(lst);
-
-  list<int>* lst2 = new list<int>;
-  Copy(vec, lst2);
-  Display(*lst2);
-
-  vector<int> vec2;
-  vec2.resize(vec.size());
-  Copy(vec, &vec2);
-  Display(vec2);
-
-  list<int> lst3(vec.begin(), vec.end());
-  Display(lst3);
 }
 
 int main() {

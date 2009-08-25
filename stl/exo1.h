@@ -6,7 +6,7 @@ using namespace std;
 
 template <typename T1, typename T2>
 void Copy(const T1& cont1, T2* cont2) {
-  copy(cont1.begin(), cont1.end(), cont2->back_inserter());
+  *cont2 = T2(cont1.begin(), cont1.end());
 }
 
 template <typename T>
