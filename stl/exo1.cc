@@ -18,8 +18,13 @@ void Exo1() {
 
   vec[0] = 1000;
   Exchange(&vec, &lst);
+  cout << "Test Exchange" << endl;
   Display(vec);
   Display(lst);
+
+  cout << "Test Extend" << endl;
+  Extend(&vec, lst);
+  Display(vec);
 }
 
 int main() {

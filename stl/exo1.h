@@ -14,6 +14,12 @@ void Exchange(T1* cont1, T2* cont2) {
   swap_ranges(cont1->begin(), cont1->end(), cont2->begin());
 }
 
+template <typename T1, typename T2>
+void Extend(T1* cont1, const T2& cont2) {
+  cont1->insert(cont1->end(), cont2.begin(), cont2.end());
+}
+
+
 template <typename T>
 T* Populate() {
   T* cont = new T;
