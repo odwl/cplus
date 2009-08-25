@@ -3,8 +3,10 @@
 #include <list>
 #include <vector>
 #include"exo1.h"
+#include"ESTLUtil.h"
 
 using namespace std;
+using namespace ESTLUtils;
 
 void Exo1() {
   vector<int> vec = *Populate<vector<int> >();
@@ -30,6 +32,9 @@ void Exo1() {
   Remove(&vec, 1000);
   Display(vec);
 
+  Timer t;
+  ToProfile();
+  cout << t << endl;
 }
 
 int main() {
