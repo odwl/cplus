@@ -1,6 +1,7 @@
 
 #include <iostream>
 #include <algorithm>
+#include <vector>
 
 using namespace std;
 
@@ -24,7 +25,6 @@ void Remove(T* cont, const S& val){
   remove(cont->begin(), cont->end(), val);
 }
 
-
 template <typename T>
 T* Populate() {
   T* cont = new T;
@@ -41,4 +41,15 @@ void Display(const T& cont) {
     cout << *it << ' ';
   }
   cout << endl;
+}
+
+class Widget {
+  int stuff[5];
+  double d;
+};
+
+void ToProfile() {
+  vector<Widget> v;
+  //v.reserve(10000000);
+  for (int i = 0; i < 10000000; ++i) v.push_back(Widget());
 }
